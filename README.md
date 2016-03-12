@@ -41,22 +41,22 @@ In order to complete this assignment, you must do the following:
 
 ## Tests
 ### In R console
-> source("cachematrix.R")
-> input = matrix( c(-20, -1, 6, -5), nrow=2, ncol=2, byrow = TRUE)
-> a<-makeCacheMatrix(input)
-> cacheSolve(a)
-            [,1]         [,2]
-[1,] -0.04716981  0.009433962
-[2,] -0.05660377 -0.188679245
-> cacheSolve(a)
-Getting cached matrix inverse...
-            [,1]         [,2]
-[1,] -0.04716981  0.009433962
-[2,] -0.05660377 -0.188679245
-> input2 = matrix( c(-20, -1, 6, -10), nrow=2, ncol=2, byrow = TRUE)
-> a<-makeCacheMatrix(input2)
-> cacheSolve(a)
-            [,1]         [,2]
-[1,] -0.04854369  0.004854369
-[2,] -0.02912621 -0.097087379
+    > source("cachematrix.R")
+    > input = matrix( c(-20, -1, 6, -5), nrow=2, ncol=2, byrow = TRUE)
+    > a<-makeCacheMatrix(input)
+    > cacheSolve(a)
+                [,1]         [,2]
+    [1,] -0.04716981  0.009433962
+    [2,] -0.05660377 -0.188679245
+    > cacheSolve(a)
+    Getting cached matrix inverse...
+                [,1]         [,2]
+    [1,] -0.04716981  0.009433962
+    [2,] -0.05660377 -0.188679245
+    > input2 = matrix( c(-20, -1, 6, -10), nrow=2, ncol=2, byrow = TRUE)
+    > a<-makeCacheMatrix(input2)
+    > cacheSolve(a)
+                [,1]         [,2]
+    [1,] -0.04854369  0.004854369
+    [2,] -0.02912621 -0.097087379
 
